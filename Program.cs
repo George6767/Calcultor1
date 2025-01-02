@@ -10,18 +10,18 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
-            bool restrt = true;
+            bool restart = true;
 
             Console.WriteLine("Hello, welcome to the calculator programm!");
 
-            while (restrt)
+            while (restart)
             {
 
                 int num1;
                 int num2;
                 string answer, input;
 
-                int result;
+                int result; 
 
                 Console.WriteLine("Please, enter your first number.");
 
@@ -32,7 +32,7 @@ namespace Calculator
                 num2 = Convert.ToInt32(Console.ReadLine());
 
                 Console.WriteLine("What type of operation would you like to do?");
-                Console.WriteLine("Please enter a for addition, s for substraction, m fro multiplication, or d for division.");
+                Console.WriteLine("Please enter The design is design. \"A\" for addition, \"S\" for substraction, \"M\" fro multiplication, or \"D\" for division.");
 
                 answer = Console.ReadLine();
 
@@ -56,17 +56,17 @@ namespace Calculator
 
                 Console.WriteLine("The result is " + result);
 
-                Console.WriteLine("If you want to repeat, put yes, if you want to finish programm, put no.");
+                Console.WriteLine("If you want to repeat, put \"Yes\", if you want to finish programm, put \"No\".");
 
                 input = Console.ReadLine();
 
                 if (input.ToLower() == "yes")
                 {
-                    restrt = true;
+                    restart = true;
                 }
                 else
                 {
-                    restrt = false;
+                    restart = false;
                 }
 
             }
